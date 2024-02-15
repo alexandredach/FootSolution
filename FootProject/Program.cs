@@ -7,24 +7,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Teams.DisplayTeamByList(Cities.ChauneSurMarne, Teams.PlayersOnField);
+            TeamsManager.GiveCard(TeamChauneSurMarne.PlayersOnField, Card.Red, "Tarek", "TIFFIEH");
             Console.WriteLine();
 
-            Teams.GiveCard(Card.Red,"Tarek","TIFFIEH");
+            //TeamChauneSurMarne.GiveCard(Card.Red,"Tarek","TIFFIEH");
 
-            Teams.GiveCard(Card.Yellow, "Roger", "TROBU");
-            Teams.GiveCard(Card.Yellow, "Roger", "TROBU");
+            //TeamChauneSurMarne.GiveCard(Card.Yellow, "Roger", "TROBU");
+            //TeamChauneSurMarne.GiveCard(Card.Yellow, "Roger", "TROBU");
 
-            Console.WriteLine("NOUVELLE EQUIPE :");
-            Teams.DisplayTeamByList(Cities.ChauneSurMarne, Teams.PlayersOnField);
+            //Console.WriteLine("NOUVELLE EQUIPE :");
+            //TeamChauneSurMarne.DisplayTeamByList(Cities.ChauneSurMarne, TeamChauneSurMarne.PlayersOnField);
 
-            Console.WriteLine();
-            Console.WriteLine("Remplaçants :");
-            Teams.DisplayTeamByList(Cities.ChauneSurMarne, Teams.PlayersSubstitute);
+            //Console.WriteLine();
+            //Console.WriteLine("Remplaçants :");
+            //TeamChauneSurMarne.DisplayTeamByList(Cities.ChauneSurMarne, TeamChauneSurMarne.PlayersSubstitute);
 
-            Console.WriteLine();
-            Console.WriteLine("Exclus :");
-            Teams.DisplayTeamByList(Cities.ChauneSurMarne, Teams.PlayersSentOff);
+            //Console.WriteLine();
+            //Console.WriteLine("Exclus :");
+            //TeamChauneSurMarne.DisplayTeamByList(Cities.ChauneSurMarne, TeamChauneSurMarne.PlayersSentOff);
 
 
 
